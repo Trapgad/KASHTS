@@ -148,6 +148,7 @@ character development for future leaders.
 
 <div>Technical</div>
 
+<div>Agriculture science </div>
 
 </div>
 
@@ -200,7 +201,7 @@ character development for future leaders.
 
 <i class="fa-solid fa-user-graduate"></i>
 
-<h2>1500+</h2>
+<h2>3500+</h2>
 
 <p>Students</p>
 
@@ -212,7 +213,7 @@ character development for future leaders.
 
 <i class="fa-solid fa-chalkboard-user"></i>
 
-<h2>90+</h2>
+<h2>150+</h2>
 
 <p>Teachers</p>
 
@@ -224,7 +225,7 @@ character development for future leaders.
 
 <i class="fa-solid fa-book"></i>
 
-<h2>8</h2>
+<h2>9</h2>
 
 <p>Programmes</p>
 
@@ -262,7 +263,7 @@ character development for future leaders.
 
 
 <h2>
-Headmaster's Message
+Headmistress's Message
 </h2>
 
 
@@ -276,7 +277,7 @@ discipline, skills and opportunities to become future leaders.
 
 
 <h3>
-- Headmaster, KASHTS
+- Miss Elrida Adu Poku Headmisstress, KASHTS
 </h3>
 
 
