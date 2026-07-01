@@ -1,79 +1,140 @@
-document.addEventListener("DOMContentLoaded", function(){
+/* =========================
+   KASHTS WEBSITE JAVASCRIPT
+========================= */
 
 
-    // Smooth scrolling only for same-page links
+// NAVBAR CHANGE ON SCROLL
 
-    document.querySelectorAll('a[href^="#"]').forEach(link => {
+window.addEventListener("scroll", function(){
 
-        link.addEventListener("click", function(e){
+    const nav = document.querySelector("nav");
 
-            e.preventDefault();
+    if(window.scrollY > 50){
 
-            const target = document.querySelector(
-                this.getAttribute("href")
-            );
-
-
-            if(target){
-
-                target.scrollIntoView({
-
-                    behavior:"smooth"
-
-                });
-
-            }
-
-        });
-
-    });
-
-
-
-    // Website welcome message
-
-    console.log(
-        "Welcome to Kwabeng Anglican Senior High / Technical School (KASHTS)"
-    );
-
-
-
-    // Remove loader after page loads
-
-    const loader = document.querySelector(".loader");
-
-
-    if(loader){
-
-        setTimeout(()=>{
-
-            loader.style.display="none";
-
-        },3000);
+        nav.style.background = "#4B0082";
 
     }
 
+    else{
+
+        nav.style.background = "rgba(75,0,130,.85)";
+
+    }
+
+});
 
 
-    // Active navigation link
-
-    const currentPage =
-    window.location.pathname.split("/").pop();
 
 
 
-    document.querySelectorAll("nav a").forEach(link=>{
+// SCROLL REVEAL ANIMATION
 
 
-        if(link.getAttribute("href") === currentPage){
-
-            link.style.color="#ffd700";
-
-        }
+const sections = document.querySelectorAll("section");
 
 
-    });
+const reveal = () => {
 
+
+sections.forEach(section => {
+
+
+const position = section.getBoundingClientRect().top;
+
+
+const screen = window.innerHeight - 100;
+
+
+
+if(position < screen){
+
+section.style.opacity = "1";
+
+section.style.transform = "translateY(0)";
+
+
+}
+
+
+
+});
+
+
+};
+
+
+
+sections.forEach(section => {
+
+
+section.style.opacity="0";
+
+section.style.transform="translateY(40px)";
+
+section.style.transition="0.8s";
+
+
+});
+
+
+
+window.addEventListener("scroll", reveal);
+
+
+reveal();
+
+
+
+
+
+// MOBILE MENU
+
+
+const nav = document.querySelector("nav");
+
+const menuButton = document.createElement("div");
+
+
+menuButton.innerHTML = "☰";
+
+menuButton.style.color="white";
+
+menuButton.style.fontSize="30px";
+
+menuButton.style.cursor="pointer";
+
+menuButton.style.display="none";
+
+
+
+nav.appendChild(menuButton);
+
+
+
+if(window.innerWidth <= 900){
+
+
+menuButton.style.display="block";
+
+
+}
+
+
+
+window.addEventListener("resize",()=>{
+
+
+if(window.innerWidth <= 900){
+
+menuButton.style.display="block";
+
+}
+
+else{
+
+menuButton.style.display="none";
+
+}
 
 
 });
@@ -81,28 +142,56 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-// Registration Function
 
-function registerStudent(){
+menuButton.addEventListener("click",()=>{
 
 
-    alert(
-    "Registration successful! Welcome to KASHTS."
-    );
+const links = document.querySelector("nav ul");
+
+
+if(links.style.display==="flex"){
+
+links.style.display="none";
+
+}
+
+else{
+
+links.style.display="flex";
+
+links.style.flexDirection="column";
+
+links.style.position="absolute";
+
+links.style.top="80px";
+
+links.style.right="20px";
+
+links.style.background="#4B0082";
+
+links.style.padding="25px";
+
+links.style.borderRadius="15px";
 
 
 }
 
 
-
-// Login Function
-
-function loginUser(){
+});
 
 
-    alert(
-    "Login successful!"
-    );
 
+
+
+
+// FOOTER YEAR
+
+
+const year = document.querySelector(".year");
+
+
+if(year){
+
+year.textContent = new Date().getFullYear();
 
 }
