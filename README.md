@@ -181,3 +181,341 @@ learning materials.
 
 
 </section>
+<!-- ================= ACADEMICS ================= -->
+
+<section id="academics">
+
+<h2>Academic Programmes</h2>
+
+
+<div class="cards">
+
+
+<div>General Science</div>
+
+<div>General Arts</div>
+
+<div>Business</div>
+
+<div>Home Economics</div>
+
+<div>Visual Arts</div>
+
+<div>Technical</div>
+
+<div>Agriculture Science</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= WHY CHOOSE KASHTS ================= -->
+
+
+<section class="why">
+
+
+<h2>Why Choose KASHTS?</h2>
+
+
+<div class="cards">
+
+
+<div>
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<h3>
+Quality Education
+</h3>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-laptop"></i>
+
+<h3>
+Technical Skills
+</h3>
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-church"></i>
+
+<h3>
+Discipline & Godliness
+</h3>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= STATISTICS ================= -->
+
+
+<section class="stats">
+
+
+<div class="stat-box">
+
+
+<i class="fa-solid fa-user-graduate"></i>
+
+
+<h2>
+1500+
+</h2>
+
+
+<p>
+Students
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="stat-box">
+
+
+<i class="fa-solid fa-school"></i>
+
+
+<h2>
+1984
+</h2>
+
+
+<p>
+Established
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="stat-box">
+
+
+<i class="fa-solid fa-book"></i>
+
+
+<h2>
+7
+</h2>
+
+
+<p>
+Programmes
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="stat-box">
+
+
+<i class="fa-solid fa-layer-group"></i>
+
+
+<h2>
+B
+</h2>
+
+
+<p>
+Category
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= HEADMISTRESS MESSAGE ================= -->
+
+
+<section class="message">
+
+
+<img src="IMC-7144.jpg">
+
+
+
+<div>
+
+
+
+<h2>
+Headmistress's Message
+</h2>
+
+
+
+
+<p>
+
+Welcome to Kwabeng Anglican Senior High Technical School.
+
+Our goal is to provide students with quality education,
+discipline, skills and opportunities that prepare them
+to become responsible leaders.
+
+</p>
+
+
+
+
+<h3>
+
+- Miss Elfreda Cecilia Adu Poku  
+<br>
+Headmistress, KASHTS
+
+</h3>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= NEWS ================= -->
+
+
+<section class="news">
+
+
+<h2>
+Latest News & Events
+</h2>
+
+
+
+<div class="cards">
+
+
+
+<div>
+
+
+<i class="fa-solid fa-calendar"></i>
+
+
+<h3>
+Admissions
+</h3>
+
+
+<p>
+Join KASHTS and begin your journey of excellence.
+</p>
+
+
+</div>
+
+
+
+
+
+<div>
+
+
+<i class="fa-solid fa-trophy"></i>
+
+
+<h3>
+Achievements
+</h3>
+
+
+<p>
+Celebrating academic and student successes.
+</p>
+
+
+</div>
+
+
+
+
+
+
+<div>
+
+
+<i class="fa-solid fa-bullhorn"></i>
+
+
+<h3>
+Announcements
+</h3>
+
+
+<p>
+Stay updated with important school information.
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
