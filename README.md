@@ -1,67 +1,47 @@
-Kwabeng Anglican Senior High Technical School (KASHTS)
-Loading...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASHTS - Home</title>
 
-KASHTIS
-	•	Home
-	•	About
-	•	Admissions
-	•	Events
-	•	Gallery
-	•	Contact
-	•	Login
-	•	Register
-	•	Students Login
-	•	Results
-Welcome to KASHTIS
-Building Future Leaders Through Quality Education.
-Apply Now
-Latest News
-School Reopening
-Classes will resume on the announced date. Students should prepare for a successful term.
-Read More
-Academic Achievement
-Congratulations to our students for their excellent performance.
-Read More
-Upcoming Events
-Stay updated with school activities and programs.
-Read More
-Latest News
-Current Updates
-Admissions for the 2026 academic year are now open.
-Sports Festival
-Annual sports competition begins next month.
-About KASHTIS
-KASHTIS is committed to providing quality education, developing responsible citizens, and preparing students for the future.
-Upcoming Events
-Date
-Event
-June 03
-Orientation
-June 05
-Parents Meeting
-July 24
-Graduation Ceremony
-Gallery
-￼ ￼ ￼
-Our School
-A place where students learn, grow and achieve their dreams.
-Welcome to Our School
-Providing quality education, discipline and excellence for a brighter future.
-Join Us
-Quality Education
-We provide the best learning environment for students.
-Experienced Teachers
-Our teachers guide students to achieve success.
-School Activities
-Students participate in sports and other activities.
-Join KASHTIS Today
-Applications are now open. Become part of our growing family.
-Enroll Now
-Contact Us
-+233 XX XXX XXXX
-P.O. Box XXX
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-Our School
-Email: school@email.com
-Phone: +233 XX XXX XXXX
-© 2026 Our School. All Rights Reserved.
+<header>
+    <h1>KWABENG ANGLICAN SENIOR HIGH / TECHNICAL SCHOOL</h1>
+    <h2>KASHTS</h2>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Portal</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Welcome to KASHTS</h2>
+        <p>
+            Welcome to the official website of Kwabeng Anglican Senior High / Technical School.
+            Use the navigation menu above to access all sections of the website.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 KASHTS. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
