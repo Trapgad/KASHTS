@@ -192,7 +192,174 @@ character development for future leaders.
 
 </section>
 
+<!-- ================= STATISTICS ================= -->
 
+<section class="stats">
+
+
+<div class="stat-box">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+<h2>1500+</h2>
+
+<p>Students</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<i class="fa-solid fa-chalkboard-user"></i>
+
+<h2>90+</h2>
+
+<p>Teachers</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<i class="fa-solid fa-book"></i>
+
+<h2>8</h2>
+
+<p>Programmes</p>
+
+</div>
+
+
+
+<div class="stat-box">
+
+<i class="fa-solid fa-award"></i>
+
+<h2>95%</h2>
+
+<p>Success Rate</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- ================= HEADMASTER MESSAGE ================= -->
+
+
+<section class="message">
+
+
+<img src="images/IMC-7144.jpg">
+
+
+<div>
+
+
+<h2>
+Headmaster's Message
+</h2>
+
+
+<p>
+
+Welcome to Kwabeng Anglican Senior High Technical School.
+Our goal is to provide students with quality education,
+discipline, skills and opportunities to become future leaders.
+
+</p>
+
+
+<h3>
+- Headmaster, KASHTS
+</h3>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= NEWS ================= -->
+
+
+<section class="news">
+
+
+<h2>
+Latest News & Events
+</h2>
+
+
+
+<div class="cards">
+
+
+<div>
+
+<i class="fa-solid fa-calendar"></i>
+
+<h3>
+Admissions Open
+</h3>
+
+<p>
+Join KASHTS and begin your journey of excellence.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-trophy"></i>
+
+<h3>
+School Achievements
+</h3>
+
+<p>
+Celebrating academic and student successes.
+</p>
+
+</div>
+
+
+
+
+
+<div>
+
+<i class="fa-solid fa-bullhorn"></i>
+
+<h3>
+Announcements
+</h3>
+
+<p>
+Stay updated with important school information.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
 
 
 
