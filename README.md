@@ -426,7 +426,165 @@ Email: info@kashts.edu
 
 
 <script src="script.js"></script>
+<!-- ================= CONTACT ================= -->
 
+<section id="contact" class="contact">
+
+
+<div class="contact-info">
+
+
+<h2>Contact KASHTS</h2>
+
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Kwabeng Anglican Senior High Technical School
+</p>
+
+
+<p>
+<i class="fa-solid fa-phone"></i>
++233 XX XXX XXXX
+</p>
+
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+info@kashts.edu
+</p>
+
+
+<div class="social">
+
+
+<a href="#">
+<i class="fa-brands fa-facebook"></i>
+</a>
+
+
+<a href="#">
+<i class="fa-brands fa-instagram"></i>
+</a>
+
+
+<a href="#">
+<i class="fa-brands fa-youtube"></i>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="contact-form">
+
+
+<form>
+
+
+<input type="text" placeholder="Your Name">
+
+
+<input type="email" placeholder="Your Email">
+
+
+<textarea placeholder="Your Message"></textarea>
+
+
+<button>
+Send Message
+</button>
+
+
+</form>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+<footer>
+
+
+<div>
+
+
+<img src="images/IMT-145.jpg">
+
+
+<h2>KASHTS</h2>
+
+
+<p>
+Knowledge • Discipline • Excellence
+</p>
+
+
+</div>
+
+
+
+
+<div class="footer-links">
+
+
+<a href="#">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#academics">Academics</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+
+</div>
+
+
+
+
+<p>
+
+© <span class="year"></span>
+Kwabeng Anglican Senior High Technical School
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+<!-- WHATSAPP BUTTON -->
+
+
+<a class="whatsapp"
+href="https://wa.me/233000000000">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
 
 </body>
 
