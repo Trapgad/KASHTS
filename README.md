@@ -1,137 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KASHTS | Home</title>
+    <title>Kwabeng Anglican Senior High Technical School | KASHTS</title>
 
-<link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- ================= NAVBAR ================= -->
 
-<div class="logo">
-    <h1>KWABENG ANGLICAN SENIOR HIGH / TECHNICAL SCHOOL</h1>
-    <h2>KASHTS</h2>
-</div>
+    <header>
 
+        <nav class="navbar">
 
-<nav>
-<ul>
-<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
-<li><a href="about.html"><i class="fa fa-school"></i> About</a></li>
-<li><a href="admissions.html"><i class="fa fa-user-plus"></i> Admissions</a></li>
-<li><a href="results.html"><i class="fa fa-file"></i> Results</a></li>
-<li><a href="register.html"><i class="fa fa-edit"></i> Register</a></li>
-<li><a href="login.html"><i class="fa fa-lock"></i> Portal</a></li>
-<li><a href="dashboard.html"><i class="fa fa-chart-line"></i> Dashboard</a></li>
-<li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
-</ul>
-</nav>
+            <div class="logo">
 
-</header>
+                <img src="images/logo.png" alt="KASHTS Logo">
 
+                <div>
+                    <h2>KASHTS</h2>
+                    <span>Knowledge • Discipline • Excellence</span>
+                </div>
 
-<section class="hero">
+            </div>
 
-<div class="hero-content">
+            <ul class="nav-links">
 
-<h1>Welcome To KASHTS</h1>
+                <li><a href="#">Home</a></li>
 
-<p>
-Empowering students with quality education,
-technical skills and leadership for a brighter future.
-</p>
+                <li><a href="#about">About</a></li>
 
+                <li><a href="#academics">Academics</a></li>
 
-<div class="buttons">
+                <li><a href="#gallery">Gallery</a></li>
 
-<a href="admissions.html" class="btn">
-Apply Now
-</a>
+                <li><a href="#news">News</a></li>
 
+                <li><a href="#contact">Contact</a></li>
 
-<a href="about.html" class="btn second">
-Learn More
-</a>
+            </ul>
 
-</div>
+            <a href="register.html" class="btn">Apply Now</a>
 
-</div>
+        </nav>
 
-</section>
+    </header>
 
+    <!-- ================= HERO ================= -->
 
+    <section class="hero">
 
-<section class="features">
+        <div class="overlay"></div>
 
-<div class="card">
+        <div class="hero-content">
 
-<i class="fa fa-graduation-cap"></i>
+            <h3>WELCOME TO</h3>
 
-<h3>Quality Education</h3>
+            <h1>KWABENG ANGLICAN SENIOR HIGH TECHNICAL SCHOOL</h1>
 
-<p>
-Providing excellent academic and technical training.
-</p>
+            <p>
+                Empowering students through quality education,
+                discipline, innovation and technical excellence.
+            </p>
 
-</div>
+            <div class="hero-buttons">
 
+                <a href="register.html" class="primary-btn">
+                    Apply Now
+                </a>
 
+                <a href="#about" class="secondary-btn">
+                    Explore KASHTS
+                </a>
 
-<div class="card">
+            </div>
 
-<i class="fa fa-book"></i>
+        </div>
 
-<h3>Student Portal</h3>
+        <a href="#about" class="scroll-down">
+            <i class="fa-solid fa-angles-down"></i>
+        </a>
 
-<p>
-Access results, announcements and school information.
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<i class="fa fa-users"></i>
-
-<h3>Community</h3>
-
-<p>
-Building responsible future leaders.
-</p>
-
-</div>
-
-
-</section>
-
-
-
-<footer>
-
-<p>
-&copy; 2026 Kwabeng Anglican Senior High / Technical School (KASHTS)
-</p>
-
-<p>
-All Rights Reserved
-</p>
-
-</footer>
-
-
-
-<script src="script.js"></script>
+    </section>
 
 </body>
 
