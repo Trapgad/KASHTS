@@ -492,3 +492,129 @@ section h2,
 
 
 }
+/* =========================
+   STATISTICS
+========================= */
+
+
+.stats{
+
+background:#4B0082;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(200px,1fr));
+
+gap:30px;
+
+color:white;
+
+}
+
+
+
+.stat-box{
+
+text-align:center;
+
+}
+
+
+
+.stat-box i{
+
+font-size:45px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.stat-box h2{
+
+color:white;
+
+font-size:40px;
+
+}
+
+
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+
+.message{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+
+
+.message img{
+
+width:100%;
+
+border-radius:20px;
+
+}
+
+
+
+.message h2{
+
+color:#4B0082;
+
+}
+
+
+
+.message p{
+
+line-height:1.8;
+
+}
+
+
+
+
+
+/* =========================
+   NEWS
+========================= */
+
+
+.news{
+
+background:#f2f2f2;
+
+}
+
+
+
+.news .cards div{
+
+background:white;
+
+}
+
+
+
+.news i{
+
+color:#4B0082;
+
+font-size:40px;
+
+}
