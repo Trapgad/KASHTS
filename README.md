@@ -545,16 +545,6 @@ Stay updated with important school information.
     FOR MORE IMAGES 
 <i class="fa-brands fa-youtube"></i>
 
-</div>
-
-
-</section>
-
-
-
-
-
-
 
 <!-- ================= CONTACT ================= -->
 
