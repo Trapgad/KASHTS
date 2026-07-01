@@ -537,7 +537,7 @@ Stay updated with important school information.
 
 <img src="PHOTO-2025-12-17-14-19-02.jpg">
 
-<img src="PHOTO-2026-05-26-14-39-30.jpg">
+<img src="IMG_7197.jpg">
 
 <img src="IMG_7200.jpg">
 
