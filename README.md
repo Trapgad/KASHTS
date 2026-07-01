@@ -543,7 +543,10 @@ Stay updated with important school information.
 
 <a href="https://whatsapp.com/channel/0029VbCEJefBPzjWIlXsn401/222">
     FOR MORE IMAGES 
-<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-youtube">
+
+</div>
+</section>
 
 
 <!-- ================= CONTACT ================= -->
