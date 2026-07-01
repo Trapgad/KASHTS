@@ -26,7 +26,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <div class="logo">
 
-<img src="IMT-145.jpg">
+<img src="IMF_7145.jpg">
 
 <h2>KASHTS</h2>
 
@@ -88,7 +88,7 @@ Explore KASHTS
 <section id="about" class="about">
 
 
-<img src="IMC-7144.jpg">
+<img src="PHOTO-2026-06-30-13-32-10.jpg">
 
 
 <div>
@@ -381,7 +381,7 @@ Category
 <section class="message">
 
 
-<img src="IMC-7144.jpg">
+<img src="IMG_7204.jpg">
 
 
 
@@ -531,13 +531,15 @@ Stay updated with important school information.
 <div class="gallery">
 
 
-<img src="IMG-5302.jpg">
+<img src="IMF_7145.jpg">
 
-<img src="Photo-2026-05-26-14-39-30.jpg">
+<img src="IMG_7196.jpg">
 
-<img src="IMG-4421.jpg">
+<img src="PHOTO-2025-12-17-14-19-02.jpg">
 
-<img src="Photo-2025-12-17-14-19-00009.jpg">
+<img src="PHOTO-2026-05-26-14-39-30.jpg">
+
+<img src="IMG_7200.jpg">
 
 
 </div>
@@ -686,7 +688,7 @@ kwabenganglicanshst@ges.gov.gh
 
 
 
-<img src="IMT-145.jpg">
+<img src="IMF_7145.jpg">
 
 
 
