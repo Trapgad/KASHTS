@@ -618,3 +618,209 @@ color:#4B0082;
 font-size:40px;
 
 }
+/* =========================
+CONTACT
+========================= */
+
+
+.contact{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+background:#f2f2f2;
+
+}
+
+
+
+.contact-info p{
+
+margin:20px 0;
+
+}
+
+
+
+.contact i{
+
+color:#4B0082;
+
+margin-right:10px;
+
+font-size:22px;
+
+}
+
+
+
+.social a{
+
+font-size:30px;
+
+margin-right:15px;
+
+color:#4B0082;
+
+}
+
+
+
+
+
+/* FORM */
+
+
+.contact-form input,
+.contact-form textarea{
+
+
+width:100%;
+
+padding:15px;
+
+margin-bottom:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:white;
+
+font-family:inherit;
+
+}
+
+
+
+.contact-form textarea{
+
+height:150px;
+
+}
+
+
+
+.contact-form button{
+
+background:#4B0082;
+
+color:white;
+
+border:none;
+
+padding:15px 35px;
+
+border-radius:30px;
+
+cursor:pointer;
+
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#111;
+
+color:white;
+
+text-align:center;
+
+padding:40px 8%;
+
+}
+
+
+
+footer img{
+
+width:70px;
+
+border-radius:50%;
+
+}
+
+
+
+.footer-links{
+
+margin:25px 0;
+
+}
+
+
+
+.footer-links a{
+
+color:white;
+
+text-decoration:none;
+
+margin:10px;
+
+}
+
+
+
+
+
+/* WHATSAPP */
+
+
+.whatsapp{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+background:#4B0082;
+
+color:white;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+z-index:999;
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+.contact{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
