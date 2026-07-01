@@ -26,7 +26,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <div class="logo">
 
-<img src="images/IMT-145.jpg">
+<img src="IMT-145.jpg">
 
 <h2>KASHTS</h2>
 
@@ -86,7 +86,7 @@ Explore KASHTS
 <section id="about" class="about">
 
 
-<img src="images/IMC-7144.jpg">
+<img src="IMC-7144.jpg">
 
 
 <div>
@@ -372,13 +372,13 @@ Stay updated with important school information.
 <div class="gallery">
 
 
-<img src="images/IMG-5302.jpg">
+<img src="IMG-5302.jpg">
 
-<img src="images/Photo-2026-05-26-14-39-30.jpg">
+<img src="Photo-2026-05-26-14-39-30.jpg">
 
-<img src="images/IMG-4421.jpg">
+<img src="IMG-4421.jpg">
 
-<img src="images/Photo-2025-12-17-14-19-00009.jpg">
+<img src="Photo-2025-12-17-14-19-00009.jpg">
 
 
 </div>
