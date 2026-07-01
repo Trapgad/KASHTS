@@ -519,3 +519,283 @@ Stay updated with important school information.
 
 
 </section>
+<!-- ================= GALLERY ================= -->
+
+
+<section id="gallery">
+
+
+<h2>School Gallery</h2>
+
+
+
+<div class="gallery">
+
+
+<img src="IMG-5302.jpg">
+
+<img src="Photo-2026-05-26-14-39-30.jpg">
+
+<img src="IMG-4421.jpg">
+
+<img src="Photo-2025-12-17-14-19-00009.jpg">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= CONTACT ================= -->
+
+
+<section id="contact" class="contact">
+
+
+
+<div class="contact-info">
+
+
+
+<h2>
+Contact KASHTS
+</h2>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Kwabeng, Atiwa District,
+Eastern Region, Ghana
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-school"></i>
+
+Kwabeng Anglican Senior High Technical School
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++233 24 461 5726
+
+</p>
+
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++233 20 555 2735
+
+</p>
+
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+kwabenganglicanshst@ges.gov.gh
+
+</p>
+
+
+
+
+<div class="social">
+
+
+
+<a href="https://www.facebook.com/share/1BkEiXj6kp/?mibextid=wwXIfr">
+
+<i class="fa-brands fa-facebook"></i>
+
+</a>
+
+
+
+
+<a href="https://www.tiktok.com/@kashts_media">
+
+<i class="fa-brands fa-tiktok"></i>
+
+</a>
+
+
+
+
+<a href="https://youtube.com/@kashtsmedia?si=YPmOtd7DKHi9MZu5">
+
+<i class="fa-brands fa-youtube"></i>
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+
+
+
+<footer>
+
+
+
+
+<div>
+
+
+
+<img src="IMT-145.jpg">
+
+
+
+<h2>
+KASHTS
+</h2>
+
+
+
+
+<p>
+Body • Mind • Soul
+</p>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-links">
+
+
+
+<a href="#">
+Home
+</a>
+
+
+
+<a href="#about">
+About
+</a>
+
+
+
+
+<a href="#academics">
+Academics
+</a>
+
+
+
+
+<a href="#gallery">
+Gallery
+</a>
+
+
+
+
+<a href="#contact">
+Contact
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+<p>
+
+
+© 2026 Kwabeng Anglican Senior High Technical School
+
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+<!-- WHATSAPP BUTTON -->
+
+
+<a class="whatsapp"
+href="https://wa.me/233244615726">
+
+
+<i class="fa-brands fa-whatsapp"></i>
+
+
+</a>
+
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
