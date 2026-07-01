@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,7 +6,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description" content="Official website of Kwabeng Anglican Senior High Technical School (KASHTS), a Category B Anglican Senior High Technical School in Kwabeng, Eastern Region, Ghana.">
+
+<meta name="keywords" content="KASHTS, Kwabeng Anglican Senior High Technical School, SHS, Technical School, Eastern Region, Ghana">
+
+<meta name="author" content="Kwabeng Anglican Senior High Technical School">
+
 <title>KASHTS | Kwabeng Anglican Senior High Technical School</title>
+
+<link rel="icon" href="IMF_7145.jpg">
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,7 +24,6 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
-
 
 <body>
 
