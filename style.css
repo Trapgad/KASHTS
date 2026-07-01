@@ -1,0 +1,422 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:purple;
+    color:white;
+    padding:15px 10%;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+
+.logo h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#ddd;
+}
+
+
+/* Hero */
+.hero{
+    height:500px;
+    background:url("images/school.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text{
+    background:rgba(0,0,0,.6);
+    padding:40px;
+    border-radius:10px;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:purple;
+}
+
+
+/* Sections */
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:purple;
+}
+
+
+/* Cards */
+.cards,
+.news,
+.images,
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+
+.card,
+.news-card,
+.contact-info,
+.contact-form,
+.login-box,
+.dash-card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+
+.card:hover,
+.news-card:hover{
+    transform:translateY(-8px);
+}
+
+
+/* Images */
+.images img,
+.gallery-grid img,
+.news-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+
+.gallery-grid img:hover,
+.images img:hover{
+    transform:scale(1.05);
+}
+
+
+/* Forms */
+form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+
+button{
+    background:purple;
+    color:white;
+    padding:12px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+
+button:hover{
+    background:black;
+}
+
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+
+th{
+    background:purple;
+    color:white;
+    padding:15px;
+}
+
+
+td{
+    padding:15px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+
+/* About */
+.about{
+    text-align:center;
+    line-height:1.8;
+    background:white;
+}
+
+
+/* Contact */
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+
+/* Login */
+.login-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(purple,black);
+}
+
+
+/* Dashboard */
+.dashboard{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    background:purple;
+    color:white;
+    padding:20px;
+}
+
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    color:purple;
+}
+
+
+/* Mobile + Tablet */
+@media(max-width:900px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+}
+/* Smooth Animation */
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+.hero-text{
+    animation: slideDown 1s ease;
+}
+
+
+.card,
+.news-card,
+.dash-card{
+    animation: fadeUp .8s ease;
+}
+
+
+@keyframes slideDown{
+
+from{
+    opacity:0;
+    transform:translateY(-50px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(40px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+
+/* Logo Style */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+
+/* Better Buttons */
+
+.btn{
+    transition:.3s;
+}
+
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+
+/* Hover links */
+
+nav a{
+    transition:.3s;
+}
+
+
+nav a:hover{
+    transform:scale(1.1);
+}
+/* Loading Screen */
+
+.loader{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:purple;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:999;
+    animation:hideLoader 3s forwards;
+}
+
+
+.loader h1{
+    font-size:40px;
+}
+
+
+@keyframes hideLoader{
+
+0%{
+    opacity:1;
+}
+
+80%{
+    opacity:1;
+}
+
+100%{
+    opacity:0;
+    visibility:hidden;
+}
+
+}
+/* Map */
+
+.map{
+    padding:60px 10%;
+    background:white;
+}
+
+.map iframe{
+    border-radius:15px;
+    margin-top:20px;
+}
