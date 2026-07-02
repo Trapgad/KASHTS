@@ -25,24 +25,20 @@
 <!-- ================= HEADER ================= -->
 <header>
   <nav class="navbar">
-
-    <!-- Logo -->
+<!-- Logo -->
     <div class="logo">
       <img src="IMF_7145.jpg" alt="KASHTS Logo">
       <h2>KASHTS</h2>
     </div>
-
-    <!-- Apply Button -->
+<!-- Apply Button -->
     <a href="admissions.html" class="apply-btn">Apply Now</a>
-
-    <!-- Hamburger Button (Aligned with style.css) -->
+<!-- Hamburger Button (Aligned with style.css) -->
     <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
-
-    <!-- Navigation Menu -->
+<!-- Navigation Menu -->
     <ul class="nav-menu" id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
