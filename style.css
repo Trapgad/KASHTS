@@ -638,3 +638,16 @@ N this
     right: 0;
   }
 }
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: var(--purple);
+  transition: 0.3s ease;
+}
+
+.nav-menu.active {
+  right: 0;
+}
