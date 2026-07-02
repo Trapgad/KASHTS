@@ -42,16 +42,12 @@
 </div>
 
 <ul id="nav-links">
-
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#academics">Academics</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#contact">Contact</a></li>
-
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
     <li><a href="admissions.html">Admissions</a></li>
     <li><a href="staff.html">Staff</a></li>
-
+    <li><a href="news.html">News</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
 </ul>
 
 <a class="apply" href="admissions.html">Apply Now</a>
