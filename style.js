@@ -59,3 +59,15 @@ const year = document.querySelector(".year");
 if (year) {
     year.textContent = new Date().getFullYear();
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', (e) => {
+        // Prevents any unexpected event bubbling issues
+        e.stopPropagation(); 
+        
+        navMenu.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+    });
+});
