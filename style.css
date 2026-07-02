@@ -9,7 +9,6 @@
   --black: #111111;
 }
 
-
 /* RESET */
 * {
   margin: 0;
@@ -233,12 +232,41 @@ section h2 {
   background: var(--gray);
 }
 
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer {
   background: var(--black);
   color: white;
   text-align: center;
   padding: 40px 8%;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 150px; /* Limits size to match layout standard */
+  max-width: 80%; /* Keeps it fully responsive on tiny devices */
+  height: auto;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+footer p {
+  color: #cccccc;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 /* WHATSAPP */
