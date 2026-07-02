@@ -1,5 +1,5 @@
 /* =========================
-   KASHTS WEBSITE JAVASCRIPT (CLEAN FIXED)
+   KASHTS WEBSITE JAVASCRIPT (FULLY FIXED)
 ========================= */
 
 // ================= NAVBAR SCROLL EFFECT =================
@@ -42,15 +42,21 @@ window.addEventListener("scroll", reveal);
 reveal();
 
 
-// ================= MOBILE MENU (ONLY ONE SYSTEM) =================
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.querySelector(".nav-menu");
+// ================= MOBILE MENU (FIXED SYSTEM) =================
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
 
-if (menuToggle && navMenu) {
-    menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
-}
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', (e) => {
+            // Prevents any unexpected event bubbling issues
+            e.stopPropagation(); 
+            
+            menuToggle.classList.toggle('active'); // Animates the hamburger to an 'X'
+            navMenu.classList.toggle('active');    // Slides the purple menu out/in
+        });
+    }
+});
 
 
 // ================= FOOTER YEAR =================
@@ -59,15 +65,3 @@ const year = document.querySelector(".year");
 if (year) {
     year.textContent = new Date().getFullYear();
 }
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navMenu = document.getElementById('nav-menu');
-
-    menuToggle.addEventListener('click', (e) => {
-        // Prevents any unexpected event bubbling issues
-        e.stopPropagation(); 
-        
-        navMenu.classList.toggle('active');
-        menuToggle.classList.toggle('open');
-    });
-});
