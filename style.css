@@ -301,3 +301,43 @@ footer{
     font-size:30px;
   }
 }
+/* The hamburger button needs the HIGHEST layer priority */
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+    /* ADD/UPDATE THESE LINES */
+    position: relative; 
+    z-index: 9999; /* Higher than the nav-menu so it stays clickable */
+}
+
+/* Your responsive Mobile Navigation Drawer */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%; 
+        width: 70%;   
+        height: 100vh;
+        background-color: #5d2b90; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        transition: right 0.4s ease-in-out;
+        
+        /* ADD/UPDATE THIS LINE */
+        z-index: 9990; /* High, but slightly lower than the toggle button */
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+}
