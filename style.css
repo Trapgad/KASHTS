@@ -219,10 +219,26 @@ section h2 {
 /* MESSAGE */
 .message {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Image on left, text on right */
   gap: 50px;
   align-items: center;
+  padding: 40px 20px;
 }
+
+.message img {
+  width: 100%;             /* Fits the 1fr column */
+  height: 450px;           /* Sets a fixed height for consistency */
+  object-fit: cover;       /* Ensures the image fills the space without stretching */
+  border-radius: 8px;      /* Optional: rounds the corners for a modern look */
+}
+
+/* Make it responsive for mobile devices */
+@media (max-width: 768px) {
+  .message {
+    grid-template-columns: 1fr; /* Stacks image and text on top of each other */
+}
+
+
 
 /* CONTACT */
 .contact {
