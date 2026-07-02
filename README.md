@@ -43,7 +43,30 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <ul id="nav-links">
 
- 
+ <nav>
+
+<div class="logo">
+<img src="IMF_7145.jpg">
+<h2>KASHTS</h2>
+</div>
+
+<!-- HAMBURGER ICON -->
+<div class="menu-toggle" id="menu-toggle">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+<ul id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="admissions.html">Admissions</a></li>
+<li><a href="staff.html">Staff</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+</ul>
+
+<a class="apply" href="admissions.html">Apply Now</a>
+
+</nav>
 
 
 
