@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,8 +20,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -29,6 +29,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <!-- ================= HEADER ================= -->
 <header>
 
+<nav>
+
+<div class="logo">
+    <img src="IMF_7145.jpg" alt="KASHTS Logo">
+    <h2>KASHTS</h2>
+</div>
+
 <!-- HAMBURGER ICON -->
 <div class="menu-toggle" id="menu-toggle">
     <i class="fa-solid fa-bars"></i>
@@ -36,35 +43,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 
 <ul id="nav-links">
 
- <nav>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
 
-<div class="logo">
-<img src="IMF_7145.jpg">
-<h2>KASHTS</h2>
-</div>
-
-<!-- HAMBURGER ICON -->
-<div class="menu-toggle" id="menu-toggle">
-<i class="fa-solid fa-bars"></i>
-</div>
-
-<ul id="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="admissions.html">Admissions</a></li>
-<li><a href="staff.html">Staff</a></li>
-<li><a href="news.html">News</a></li>
-<li><a href="index.html#contact">Contact</a></li>
-</ul>
-
-<a class="apply" href="admissions.html">Apply Now</a>
-
-</nav>
-
-
-
-
-
+    <li><a href="admissions.html">Admissions</a></li>
+    <li><a href="staff.html">Staff</a></li>
 
 </ul>
 
@@ -75,7 +61,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="hero-text">
 
@@ -131,10 +117,10 @@ The school is Anglican and provides quality education, technical skills and char
 
 </section>
 
-<!-- ================= REST OF YOUR PAGE (UNCHANGED) ================= -->
-
+<!-- ================= ACADEMICS ================= -->
 <section id="academics">
 <h2>Academic Programmes</h2>
+
 <div class="cards">
 <div>General Science</div>
 <div>General Arts</div>
@@ -144,42 +130,111 @@ The school is Anglican and provides quality education, technical skills and char
 <div>Technical</div>
 <div>Agriculture Science</div>
 </div>
+
 </section>
 
+<!-- ================= WHY CHOOSE ================= -->
 <section class="why">
 <h2>Why Choose KASHTS?</h2>
+
 <div class="cards">
-<div><i class="fa-solid fa-graduation-cap"></i><h3>Quality Education</h3></div>
-<div><i class="fa-solid fa-laptop"></i><h3>Technical Skills</h3></div>
-<div><i class="fa-solid fa-church"></i><h3>Discipline & Godliness</h3></div>
-</div>
-</section>
 
-<section class="stats">
-<div class="stat-box"><i class="fa-solid fa-user-graduate"></i><h2>1500+</h2><p>Students</p></div>
-<div class="stat-box"><i class="fa-solid fa-school"></i><h2>1984</h2><p>Established</p></div>
-<div class="stat-box"><i class="fa-solid fa-book"></i><h2>7</h2><p>Programmes</p></div>
-<div class="stat-box"><i class="fa-solid fa-layer-group"></i><h2>B</h2><p>Category</p></div>
-</section>
-
-<section class="message">
-<img src="IMG_7204.jpg">
 <div>
-<h2>Headmistress's Message</h2>
-<p>Welcome to Kwabeng Anglican Senior High Technical School. Our goal is to provide students with quality education, discipline, skills and opportunities that prepare them to become responsible leaders.</p>
-<h3>- Miss Elfreda Cecilia Adu Poku<br>Headmistress, KASHTS</h3>
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>Quality Education</h3>
+</div>
+
+<div>
+<i class="fa-solid fa-laptop"></i>
+<h3>Technical Skills</h3>
+</div>
+
+<div>
+<i class="fa-solid fa-church"></i>
+<h3>Discipline & Godliness</h3>
+</div>
+
 </div>
 </section>
 
+<!-- ================= STATISTICS ================= -->
+<section class="stats">
+
+<div class="stat-box">
+<i class="fa-solid fa-user-graduate"></i>
+<h2>1500+</h2>
+<p>Students</p>
+</div>
+
+<div class="stat-box">
+<i class="fa-solid fa-school"></i>
+<h2>1984</h2>
+<p>Established</p>
+</div>
+
+<div class="stat-box">
+<i class="fa-solid fa-book"></i>
+<h2>7</h2>
+<p>Programmes</p>
+</div>
+
+<div class="stat-box">
+<i class="fa-solid fa-layer-group"></i>
+<h2>B</h2>
+<p>Category</p>
+</div>
+
+</section>
+
+<!-- ================= MESSAGE ================= -->
+<section class="message">
+
+<img src="IMG_7204.jpg">
+
+<div>
+
+<h2>Headmistress's Message</h2>
+
+<p>
+Welcome to Kwabeng Anglican Senior High Technical School. Our goal is to provide students with quality education, discipline, skills and opportunities that prepare them to become responsible leaders.
+</p>
+
+<h3>- Miss Elfreda Cecilia Adu Poku<br>Headmistress, KASHTS</h3>
+
+</div>
+
+</section>
+
+<!-- ================= NEWS ================= -->
 <section class="news">
 <h2>Latest News & Events</h2>
+
 <div class="cards">
-<div><i class="fa-solid fa-calendar"></i><h3>Admissions</h3><p>Join KASHTS and begin your journey of excellence.</p></div>
-<div><i class="fa-solid fa-trophy"></i><h3>Achievements</h3><p>Celebrating academic and student successes.</p></div>
-<div><i class="fa-solid fa-bullhorn"></i><h3>Announcements</h3><p>Stay updated with important school information.</p></div>
+
+<div>
+<i class="fa-solid fa-calendar"></i>
+<h3>Admissions</h3>
+<p>Join KASHTS and begin your journey of excellence.</p>
+</div>
+
+<div>
+<i class="fa-solid fa-trophy"></i>
+<h3>Achievements</h3>
+<p>Celebrating academic and student successes.</p>
+</div>
+
+<div>
+<i class="fa-solid fa-bullhorn"></i>
+<h3>Announcements</h3>
+<p>Stay updated with important school information.</p>
+</div>
+
 </div>
 </section>
+
+<!-- ================= GALLERY ================= -->
 <section id="gallery">
+
 <h2>School Gallery</h2>
 
 <div class="gallery">
@@ -193,19 +248,20 @@ The school is Anglican and provides quality education, technical skills and char
 
 </div>
 
-<!-- VIEW MORE IMAGES BUTTON -->
 <div style="margin-top:30px;">
     <a href="gallery.html" class="btn">
-        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-solid fa-images"></i>
         View More Images
     </a>
 </div>
 
 </section>
 
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="contact">
 
 <div class="contact-info">
+
 <h2>Contact KASHTS</h2>
 
 <p><i class="fa-solid fa-location-dot"></i> Kwabeng, Atiwa District, Eastern Region, Ghana</p>
