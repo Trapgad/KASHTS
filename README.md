@@ -22,19 +22,27 @@
 </head>
 
 <body>
-
 <!-- ================= HEADER ================= -->
 <header>
   <nav class="navbar">
+
+    <!-- Logo -->
     <div class="logo">
       <img src="IMF_7145.jpg" alt="KASHTS Logo">
       <h2>KASHTS</h2>
     </div>
 
-  
-<header>
-  <nav class="navbar">
-    <!-- Main Navigation Menu -->
+    <!-- Apply Button -->
+    <a href="admissions.html" class="apply-btn">Apply Now</a>
+
+    <!-- Hamburger Button (Aligned with style.css) -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation Menu -->
     <ul class="nav-menu" id="nav-menu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -44,17 +52,10 @@
       <li><a href="news.html">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
- <!-- Apply Button -->
-    <a href="admissions.html" class="apply-btn">Apply Now</a>
-<!-- Mobile Menu Hamburger Button -->
-    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
 
   </nav>
 </header>
+
 
 
 <!-- ================= HERO ================= -->
