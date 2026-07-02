@@ -307,7 +307,8 @@ Welcome to Kwabeng Anglican Senior High Technical School. Our goal is to provide
 <i class="fa-brands fa-whatsapp"></i>
 </a>
 
-<script src="script.js"></script>
+<script src="style.js"></script>
+
 
 </body>
 </html>
