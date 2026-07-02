@@ -162,17 +162,28 @@ The school is Anglican and provides quality education, technical skills and char
 <div><i class="fa-solid fa-bullhorn"></i><h3>Announcements</h3><p>Stay updated with important school information.</p></div>
 </div>
 </section>
-
 <section id="gallery">
 <h2>School Gallery</h2>
+
 <div class="gallery">
+
 <img src="IMG_7201.jpg">
 <img src="IMG_4416.JPG">
 <img src="IMG_7196.jpg">
 <img src="PHOTO-2025-12-17-14-19-02.jpg">
 <img src="IMG_7197.jpg">
 <img src="IMG_7200.jpg">
+
 </div>
+
+<!-- VIEW MORE IMAGES BUTTON -->
+<div style="margin-top:30px;">
+    <a href="gallery.html" class="btn">
+        <i class="fa-brands fa-whatsapp"></i>
+        View More Images
+    </a>
+</div>
+
 </section>
 
 <section id="contact" class="contact">
