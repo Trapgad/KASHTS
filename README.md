@@ -1,236 +1,201 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KASHTS</title>
+    <!-- FontAwesome for fallback icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-  <meta name="description" content="Official website of Kwabeng Anglican Senior High Technical School (KASHTS), a Category B Anglican Senior High Technical School in Kwabeng, Eastern Region, Ghana.">
-  <meta name="keywords" content="KASHTS, Kwabeng Anglican Senior High Technical School, SHS, Technical School, Eastern Region, Ghana">
-  <meta name="author" content="Kwabeng Anglican Senior High Technical School">
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: #2C064C; 
+            text-align: center;
+            position: relative;
+        }
 
-  <title>KASHTS | Kwabeng Anglican Senior High Technical School</title>
+        /* --- MOTION BACKGROUND SLIDESHOW --- */
+        .slideshow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            list-style: none;
+        }
 
-  <link rel="icon" href="IMF_7145.jpg">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        .slideshow li {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            animation: imageAnimation 15s linear infinite;
+        }
+
+        /* Background Motion Photos Loop */
+        .slideshow li:nth-child(1) { background-image: url('IMG_7204.jpg'); }
+        .slideshow li:nth-child(2) { background-image: url('IMG_7201.jpg'); animation-delay: 5s; }
+        .slideshow li:nth-child(3) { background-image: url('PHOTO-2026-06-30-13-32-10.jpg'); animation-delay: 10s; }
+
+        @keyframes imageAnimation { 
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            8% { opacity: 1; animation-timing-function: ease-out; }
+            33% { opacity: 1; }
+            41% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        /* Branded filter layer overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(74, 14, 119, 0.85), rgba(44, 6, 76, 0.9));
+            z-index: 2;
+        }
+
+        /* --- BRANDED INTERACTIVE CONTENT --- */
+        .welcome-container {
+            position: relative;
+            z-index: 3;
+            animation: fadeIn 1.5s ease-out forwards;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container framework wrapping the school crest image */
+        .logo-frame {
+            width: 110px;
+            height: 110px;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .logo-frame img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: slideUp 1s ease-out 0.5s forwards;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        .motto {
+            font-size: 1.1rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #d8b4f8;
+            margin-bottom: 20px;
+            font-weight: 600;
+            opacity: 0;
+            animation: slideUp 1s ease-out 0.8s forwards;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #e2d5f0;
+            opacity: 0;
+            animation: slideUp 1s ease-out 1s forwards;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        .enter-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #4A0E77;
+            background: white;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: slideUp 1s ease-out 1.3s forwards;
+        }
+
+        .enter-btn:hover {
+            transform: translateY(-3px);
+            background: #d8b4f8;
+            color: #2C064C;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+        }
+
+        /* Keyframe Utilities */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
 </head>
-
 <body>
-  <!-- ================= HEADER ================= -->
-  <header>
-    <nav class="navbar">
-      <!-- Logo -->
-      <div class="logo">
-        <img src="IMF_7145.jpg" alt="KASHTS Logo">
-        <h2>KASHTS</h2>
-      </div>
-      
-      <!-- Apply Button -->
-      <a href="admissions.html" class="apply-btn">Apply Now</a>
-      
-      <!-- Hamburger Button (Aligned with style.css) -->
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-      <!-- Navigation Menu -->
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="staff.html">Staff</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="home">
-    <div class="hero-text">
-      <h3>WELCOME TO</h3>
-      <h1>Kwabeng Anglican Senior High Technical School</h1>
-      <p>Body • Mind • Soul</p>
-      <!-- FIX: Changed from "#about" section anchor to the new dedicated about.html page -->
-      <a href="about.html" class="btn">Explore KASHTS</a>
-    </div>
-  </section>
+    <!-- Back layer background image animation -->
+    <ul class="slideshow">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="about">
-    <img src="PHOTO-2026-06-30-13-32-10.jpg" alt="School Image">
-    <div>
-      <h2>About KASHTS</h2>
-      <p>
-        Kwabeng Anglican Senior High Technical School (KASHTS) is a Public Category B Senior High Technical School located in Kwabeng, Atiwa District, Eastern Region, Ghana.
-        The school is Anglican and provides quality education, technical skills and character development for students.
-      </p>
+    <!-- Filter tint matrix overlay -->
+    <div class="overlay"></div>
 
-      <div class="boxes">
-        <div>
-          <i class="fa-solid fa-eye"></i>
-          <h3>Vision</h3>
-          <p>To create an enabling environment in the school to facilitate effective teaching and learning.</p>
+    <!-- UI Interaction Node Container -->
+    <div class="welcome-container">
+        
+        <!-- Beautiful round frame showcasing your actual school crest logo image -->
+        <div class="logo-frame">
+            <img src="IMF_7145.jpg" alt="KASHTS Official Crest Logo">
         </div>
-        <div>
-          <i class="fa-solid fa-bullseye"></i>
-          <h3>Mission</h3>
-          <p>To ensure students receive quality education and training through effective management and use of teaching and learning materials.</p>
-        </div>
-        <div>
-          <i class="fa-solid fa-star"></i>
-          <h3>Core Values</h3>
-          <p>Teamwork • Excellence • Godliness • Integrity • Quality</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ACADEMICS ================= -->
-  <section id="academics">
-    <h2>Academic Programmes</h2>
-    <div class="cards">
-      <div>General Science</div>
-      <div>General Arts</div>
-      <div>Business</div>
-      <div>Home Economics</div>
-      <div>Visual Arts</div>
-      <div>Technical</div>
-      <div>Agriculture Science</div>
-    </div>
-  </section>
-
-  <!-- ================= WHY CHOOSE ================= -->
-  <section class="why">
-    <h2>Why Choose KASHTS?</h2>
-    <div class="cards">
-      <div>
-        <i class="fa-solid fa-graduation-cap"></i>
-        <h3>Quality Education</h3>
-      </div>
-      <div>
-        <i class="fa-solid fa-laptop"></i>
-        <h3>Technical Skills</h3>
-      </div>
-      <div>
-        <i class="fa-solid fa-church"></i>
-        <h3>Discipline & Godliness</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= STATISTICS ================= -->
-  <section class="stats">
-    <div class="stat-box">
-      <i class="fa-solid fa-user-graduate"></i>
-      <h2>1500+</h2>
-      <p>Students</p>
-    </div>
-    <div class="stat-box">
-      <i class="fa-solid fa-school"></i>
-      <h2>1984</h2>
-      <p>Established</p>
-    </div>
-    <div class="stat-box">
-      <i class="fa-solid fa-book"></i>
-      <h2>7</h2>
-      <p>Programmes</p>
-    </div>
-    <div class="stat-box">
-      <i class="fa-solid fa-layer-group"></i>
-      <h2>B</h2>
-      <p>Category</p>
-    </div>
-  </section>
-
-  <!-- ================= MESSAGE ================= -->
-  <section class="message">
-    <!-- FIX: Added alternative description text for better accessibility/SEO -->
-    <img src="IMG_7204.jpg" alt="Headmistress Miss Elfreda Cecilia Adu Poku">
-    <div>
-      <h2>Headmistress's Message</h2>
-      <p>
-        Welcome to Kwabeng Anglican Senior High Technical School. Our goal is to provide students with quality education, discipline, skills and opportunities that prepare them to become responsible leaders.
-      </p>
-      <h3>- Miss Elfreda Cecilia Adu Poku<br>Headmistress, KASHTS</h3>
-    </div>
-  </section>
-
-  <!-- ================= NEWS ================= -->
-  <section class="news">
-    <h2>Latest News & Events</h2>
-    <div class="cards">
-      <div>
-        <i class="fa-solid fa-calendar"></i>
-        <h3>Admissions</h3>
-        <p>Join KASHTS and begin your journey of excellence.</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-trophy"></i>
-        <h3>Achievements</h3>
-        <p>Celebrating academic and student successes.</p>
-      </div>
-      <div>
-        <i class="fa-solid fa-bullhorn"></i>
-        <h3>Announcements</h3>
-        <p>Stay updated with important school information.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= GALLERY ================= -->
-  <section id="gallery">
-    <h2>School Gallery</h2>
-    <div class="gallery">
-      <!-- FIX: Added descriptive empty or basic alt attributes to avoid rendering broken layouts on slower networks -->
-      <img src="IMG_7201.jpg" alt="KASHTS Campus Life 1">
-      <img src="IMG_4416.JPG" alt="KASHTS Campus Life 2">
-      <img src="IMG_7196.jpg" alt="KASHTS Campus Life 3">
-      <img src="PHOTO-2025-12-17-14-19-02.jpg" alt="KASHTS Campus Life 4">
-      <img src="IMG_7197.jpg" alt="KASHTS Campus Life 5">
-      <img src="IMG_7200.jpg" alt="KASHTS Campus Life 6">
+        
+        <h1>Welcome to KASHTS</h1>
+        <div class="motto">Body • Mind • Soul</div> 
+        <p>Kwabeng Anglican Senior High Technical School</p>
+        
+        <a href="index.html" class="enter-btn">
+            Enter Website <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i>
+        </a>
     </div>
 
-    <div style="margin-top:30px;">
-      <a href="gallery.html" class="btn">
-        <i class="fa-solid fa-images"></i>
-        View More Images
-      </a>
-    </div>
-  </section>
-
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact">
-    <div class="contact-info">
-      <h2>Contact KASHTS</h2>
-      <p><i class="fa-solid fa-location-dot"></i> Kwabeng, Atiwa District, Eastern Region, Ghana</p>
-      <p><i class="fa-solid fa-phone"></i> +233 24 461 5726</p>
-      <p><i class="fa-solid fa-phone"></i> +233 20 555 2735</p>
-      <p><i class="fa-solid fa-envelope"></i> kwabenganglicanshst@ges.gov.gh</p>
-    </div>
-  </section>
-
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <div>
-      <img src="IMF_7145.jpg" alt="KASHTS Footer Logo">
-      <h2>KASHTS</h2>
-      <p>Body • Mind • Soul</p>
-    </div>
-    <p>© 2026 Kwabeng Anglican Senior High Technical School</p>
-  </footer>
-
-  <!-- WHATSAPP -->
-  <!-- FIX: Added accessible label description for text-readers -->
-  <a class="whatsapp" href="https://wa.me/233244615726" aria-label="Chat with KASHTS on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <script src="style.js"></script>
 </body>
-
 </html>
