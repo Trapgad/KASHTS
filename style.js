@@ -65,3 +65,13 @@ const year = document.querySelector(".year");
 if (year) {
     year.textContent = new Date().getFullYear();
 }
+// AUTO REDIRECT AFTER 6 SECONDS
+setTimeout(() => {
+  document.body.style.opacity = "0";
+  document.body.style.transition = "1s";
+
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 1000);
+
+}, 6000);
