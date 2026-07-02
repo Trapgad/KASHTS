@@ -32,7 +32,6 @@ window.addEventListener("scroll", function () {
     }
 });
 
-
 // ================= SCROLL REVEAL ANIMATION =================
 const sections = document.querySelectorAll("section");
 
