@@ -1,343 +1,332 @@
 /* =========================
-   KASHTS WEBSITE CSS (FINAL CLEAN FIXED)
+   KASHTS WEBSITE CSS (FULLY FIXED & OPTIMIZED)
 ========================= */
 
-:root{
-  --purple:#4B0082;
-  --white:#ffffff;
-  --gray:#f2f2f2;
-  --black:#111111;
+:root {
+  --purple: #4B0082;
+  --white: #ffffff;
+  --gray: #f2f2f2;
+  --black: #111111;
 }
 
 /* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior:smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-  font-family:'Poppins',sans-serif;
-  color:var(--black);
-  background:var(--white);
-  padding-top:90px;
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  background: var(--white);
+  padding-top: 90px;
 }
 
-/* ================= HEADER ================= */
-header{
-  position:fixed;
-  top:0;
-  width:100%;
-  z-index:1000;
+/* ================= HEADER & NAVBAR ================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.navbar{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 8%;
-  background:var(--purple);
-  position:relative;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: var(--purple);
+  width: 100%;
 }
 
 /* LOGO */
-.logo{
-  display:flex;
-  align-items:center;
-  gap:10px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.logo img{
-  width:50px;
-  border-radius:50%;
+.logo img {
+  width: 50px;
+  border-radius: 50%;
 }
 
-.logo h2{
-  color:white;
+.logo h2 {
+  color: white;
 }
 
 /* APPLY BUTTON */
-.apply-btn{
-  background:white;
-  color:var(--purple);
-  padding:10px 20px;
-  border-radius:25px;
-  text-decoration:none;
-  font-weight:bold;
+.apply-btn {
+  background: white;
+  color: var(--purple);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* ================= NAV MENU ================= */
-.nav-menu{
-  display:flex;
-  gap:25px;
-  list-style:none;
+/* ================= NAV MENU (DESKTOP) ================= */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
 }
 
-.nav-menu a{
-  color:white;
-  text-decoration:none;
-  font-weight:600;
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-/* ================= HAMBURGER ================= */
-.menu-toggle{
-  display:none;
-  flex-direction:column;
-  gap:5px;
-  cursor:pointer;
-  background:none;
-  border:none;
+/* HAMBURGER BUTTON (HIDDEN ON DESKTOP) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative; 
+  z-index: 9999; /* Keeps button on top of the menu overlay */
 }
 
-.menu-toggle span{
-  width:28px;
-  height:3px;
-  background:white;
-  transition:0.3s;
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background: white;
+  transition: 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+/* Hamburger to 'X' animation rules */
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 /* ================= HERO ================= */
-.hero{
-  height:100vh;
+.hero {
+  height: 100vh;
   background:
-    linear-gradient(rgba(75,0,130,.75),rgba(0,0,0,.75)),
+    linear-gradient(rgba(75,0,130,.75), rgba(0,0,0,.75)),
     url("Photo-2026-06-30-13-32-10.jpg");
-  background-size:cover;
-  background-position:center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.hero-text{
-  color:white;
-  max-width:900px;
-  padding:20px;
+.hero-text {
+  color: white;
+  max-width: 900px;
+  padding: 20px;
 }
 
-.hero-text h1{
-  font-size:55px;
-  margin:20px 0;
+.hero-text h1 {
+  font-size: 55px;
+  margin: 20px 0;
 }
 
-.hero-text p{
-  font-size:22px;
-  margin-bottom:30px;
+.hero-text p {
+  font-size: 22px;
+  margin-bottom: 30px;
 }
 
-.btn{
-  background:white;
-  color:var(--purple);
-  padding:15px 35px;
-  border-radius:40px;
-  text-decoration:none;
-  font-weight:bold;
-  display:inline-block;
+.btn {
+  background: white;
+  color: var(--purple);
+  padding: 15px 35px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
 }
 
 /* ================= SECTIONS ================= */
-section{
-  padding:80px 8%;
-  text-align:center;
+section {
+  padding: 80px 8%;
+  text-align: center;
 }
 
-section h2{
-  color:var(--purple);
-  font-size:40px;
-  margin-bottom:20px;
+section h2 {
+  color: var(--purple);
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 /* ABOUT */
-.about{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
 
-.about img{
-  width:100%;
-  border-radius:20px;
+.about img {
+  width: 100%;
+  border-radius: 20px;
 }
 
-.boxes{
-  display:flex;
-  gap:20px;
-  margin-top:30px;
+.boxes {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-.boxes div{
-  background:var(--gray);
-  padding:25px;
-  border-radius:15px;
+.boxes div {
+  background: var(--gray);
+  padding: 25px;
+  border-radius: 15px;
 }
 
 /* CARDS */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
 }
 
-.cards div{
-  background:var(--gray);
-  padding:35px;
-  border-radius:20px;
+.cards div {
+  background: var(--gray);
+  padding: 35px;
+  border-radius: 20px;
 }
 
 /* GALLERY */
-.gallery{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.gallery img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  border-radius:20px;
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 /* STATS */
-.stats{
-  background:var(--purple);
-  color:white;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:30px;
+.stats {
+  background: var(--purple);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
 }
 
 /* MESSAGE */
-.message{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  align-items:center;
+.message {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
 
 /* CONTACT */
-.contact{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-  background:var(--gray);
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: var(--gray);
 }
 
 /* FOOTER */
-footer{
-  background:var(--black);
-  color:white;
-  text-align:center;
-  padding:40px 8%;
+footer {
+  background: var(--black);
+  color: white;
+  text-align: center;
+  padding: 40px 8%;
 }
 
 /* WHATSAPP */
-.whatsapp{
-  position:fixed;
-  right:25px;
-  bottom:25px;
-  background:var(--purple);
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:white;
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: var(--purple);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 999;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE DESIGN ================= */
 
-/* TABLET */
-@media(max-width:900px){
-
-  .menu-toggle{
-    display:flex;
+/* TABLETS & PHONES (900px and down) */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 5%; /* Tighten padding so everything fits on small devices */
   }
 
-  .apply-btn{
-    display:none;
+  .menu-toggle {
+    display: flex; /* Show hamburger button */
   }
 
-  .nav-menu{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:260px;
-    height:100vh;
-    background:var(--purple);
-    flex-direction:column;
-    padding-top:80px;
-    gap:20px;
-    transition:0.3s;
+  .apply-btn {
+    display: none; /* Hide desktop button layout */
   }
 
-  .nav-menu.active{
-    right:0;
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Keep menu hidden completely out of frame */
+    width: 260px;
+    height: 100vh;
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    gap: 25px;
+    transition: right 0.3s ease-in-out;
+    z-index: 9990; /* Right below the menu-toggle layer priority */
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.active {
+    right: 0; /* Slide in smoothly when active */
   }
 
   .about,
   .message,
-  .contact{
-    grid-template-columns:1fr;
+  .contact {
+    grid-template-columns: 1fr;
   }
 
-  .hero-text h1{
-    font-size:40px;
-  }
-}
-
-/* PHONE */
-@media(max-width:600px){
-
-  .hero-text h1{
-    font-size:30px;
-  }
-
-  section h2{
-    font-size:30px;
-  }
-}
-/* The hamburger button needs the HIGHEST layer priority */
-.menu-toggle {
-    display: flex;
+  .boxes {
     flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    
-    /* ADD/UPDATE THESE LINES */
-    position: relative; 
-    z-index: 9999; /* Higher than the nav-menu so it stays clickable */
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
 }
 
-/* Your responsive Mobile Navigation Drawer */
-@media (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%; 
-        width: 70%;   
-        height: 100vh;
-        background-color: #5d2b90; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 25px;
-        transition: right 0.4s ease-in-out;
-        
-        /* ADD/UPDATE THIS LINE */
-        z-index: 9990; /* High, but slightly lower than the toggle button */
-    }
+/* SMALL PHONES */
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
 
-    .nav-menu.active {
-        right: 0;
-    }
+  section h2 {
+    font-size: 30px;
+  }
 }
