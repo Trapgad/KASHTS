@@ -839,3 +839,23 @@ font-size:30px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
+#location {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#location .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #1e90ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#location .btn:hover {
+    background: #0f6fd1;
+}
