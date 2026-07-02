@@ -272,37 +272,55 @@ footer {
 /* TABLETS & PHONES (900px and down) */
 @media (max-width: 900px) {
   .navbar {
-    padding: 15px 5%; /* Tighten padding so everything fits on small devices */
+    padding: 15px 5%; 
   }
 
   .menu-toggle {
     display: flex; /* Show hamburger button */
   }
 
+  /* Hamburger to 'X' animation using the 'active' class from JS */
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
   .apply-btn {
-    display: none; /* Hide desktop button layout */
+    display: none; 
   }
 
   .nav-menu {
     position: fixed;
-    top: 0;
-    right: -100%; /* Keep menu hidden completely out of frame */
-    width: 260px;
-    height: 100vh;
+    top: 80px; /* Position it right below your purple header bar */
+    right: -100%; /* Keep menu hidden completely out of frame to the right */
+    width: 100%; /* Take up full width for clean mobile presentation */
+    height: calc(100vh - 80px); /* Fill the rest of the screen */
     background: var(--purple);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-top: 80px;
-    gap: 25px;
-    transition: right 0.3s ease-in-out;
-    z-index: 9990; /* Right below the menu-toggle layer priority */
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    justify-content: flex-start; /* List links starting from top down */
+    padding-top: 40px;
+    gap: 35px;
+    transition: right 0.4s ease-in-out;
+    z-index: 9990; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
 
+  /* Slide in smoothly when active class is applied by JS */
   .nav-menu.active {
-    right: 0; /* Slide in smoothly when active */
+    right: 0; 
+  }
+
+  .nav-menu a {
+    font-size: 20px; /* Make text bigger so it's easy to tap on phones */
+    width: 100%;
+    display: block;
   }
 
   .about,
