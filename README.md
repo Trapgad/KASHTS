@@ -1,6 +1,11 @@
 <html lang="en">
 <head>
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -19,36 +24,42 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
 </head>
 
+<body>
 
+<!-- ================= HEADER ================= -->
+<header>
+  <nav class="navbar">
 
-<nav>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="IMF_7145.jpg" alt="KASHTS Logo">
+      <h2>KASHTS</h2>
+    </div>
 
-<div class="logo">
-    <img src="IMF_7145.jpg" alt="KASHTS Logo">
-    <h2>KASHTS</h2>
-</div>
+    <!-- Apply Button -->
+    <a href="admissions.html" class="apply-btn">Apply Now</a>
 
-<!-- HAMBURGER ICON -->
-<div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-</div>
+    <!-- Hamburger Button -->
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<ul id="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="admissions.html">Admissions</a></li>
-    <li><a href="staff.html">Staff</a></li>
-    <li><a href="news.html">News</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-</ul>
+    <!-- Navigation Menu -->
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
 
-<a class="apply" href="admissions.html">Apply Now</a>
-
-</nav>
-
+  </nav>
+</header>
 </header>
 
 <!-- ================= HERO ================= -->
