@@ -183,4 +183,186 @@ section h2 {
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.cards div {
+  background: var(--gray);
+  padding: 35px;
+  border-radius: 20px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* STATS */
+.stats {
+  background: var(--purple);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+/* MESSAGE */
+.message {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* CONTACT */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  background: var(--gray);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: var(--black);
+  color: white;
+  text-align: center;
+  padding: 40px 8%;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 150px; /* Limits size to match layout standard */
+  max-width: 80%; /* Keeps it fully responsive on tiny devices */
+  height: auto;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+footer h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+  width: fit-content;
+}
+
+footer p {
+  color: #cccccc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  background: var(--purple);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 999;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* TABLETS & PHONES (900px and down) */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 5%; 
+  }
+
+  .menu-toggle {
+    display: flex; /* Show hamburger button */
+  }
+
+  /* Hamburger to 'X' animation using the 'active' class from JS */
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .apply-btn {
+    display: none; 
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 80px; /* Position it right below your purple header bar */
+    right: -100%; /* Keep menu hidden completely out of frame to the right */
+    width: 100%; /* Take up full width for clean mobile presentation */
+    height: calc(100vh - 80px); /* Fill the rest of the screen */
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* List links starting from top down */
+    padding-top: 40px;
+    gap: 35px;
+    transition: right 0.4s ease-in-out;
+    z-index: 9990; 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Slide in smoothly when active class is applied by JS */
+  .nav-menu.active {
+    right: 0; 
+  }
+
+  .nav-menu a {
+    font-size: 20px; /* Make text bigger so it's easy to tap on phones */
+    width: 100%;
+    display: block;
+  }
+
+  .about,
+  .message,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+  }
+}
+
+/* SMALL PHONES */
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  section h2 {
+    font-size: 30px;
+  }
+}
