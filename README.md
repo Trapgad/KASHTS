@@ -537,7 +537,9 @@ Stay updated with important school information.
 <div class="gallery">
 
 
-<img src="IMF_7145.jpg">
+<img src="IMG_7201.jpg">
+    
+<img src="IMG_4416.JPG">
 
 <img src="IMG_7196.jpg">
 
