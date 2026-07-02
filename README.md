@@ -25,36 +25,55 @@
 
 <!-- ================= HEADER ================= -->
 <header>
+
   <nav class="navbar">
 
     <!-- Logo -->
+
     <div class="logo">
+
       <img src="IMF_7145.jpg" alt="KASHTS Logo">
+
       <h2>KASHTS</h2>
+
     </div>
 
     <!-- Apply Button -->
+
     <a href="admissions.html" class="apply-btn">Apply Now</a>
 
     <!-- Hamburger Button -->
+
     <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+
       <span></span>
+
       <span></span>
+
       <span></span>
+
     </button>
 
     <!-- Navigation Menu -->
+
     <ul class="nav-menu" id="nav-menu">
+
       <li><a href="index.html">Home</a></li>
+
       <li><a href="about.html">About</a></li>
+
       <li><a href="admissions.html">Admissions</a></li>
+
       <li><a href="staff.html">Staff</a></li>
+
       <li><a href="news.html">News</a></li>
+
       <li><a href="index.html#contact">Contact</a></li>
+
     </ul>
 
   </nav>
-</header>
+
 </header>
 
 <!-- ================= HERO ================= -->
