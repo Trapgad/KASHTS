@@ -1,9 +1,4 @@
 <html lang="en">
-<head>
-
-
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
 <meta charset="UTF-8">
