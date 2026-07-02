@@ -29,13 +29,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 <!-- ================= HEADER ================= -->
 <header>
 
-<nav>
-
-<div class="logo">
-    <img src="IMF_7145.jpg" alt="KASHTS Logo">
-    <h2>KASHTS</h2>
-</div>
-
 <!-- HAMBURGER ICON -->
 <div class="menu-toggle" id="menu-toggle">
     <i class="fa-solid fa-bars"></i>
