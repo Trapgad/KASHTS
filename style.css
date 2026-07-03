@@ -1,12 +1,4 @@
 /* =========================
-   KASHTS WEBSITE CSS
-========================= */
-
-:root {
-  --purple: #551a8b; /* Updated to match your screenshot */
-  --white: #ffffff;
-  --gray: #Take n do the needed corrections 
-/* =========================
    KASHTS WEBSITE CSS (FULLY FIXED & OPTIMIZED)
 ========================= */
 
@@ -100,7 +92,7 @@ header {
   background: none;
   border: none;
   position: relative; 
-  z-index: 9999; /* Keeps button on top of the menu overlay */
+  z-index: 9999;
 }
 
 .menu-toggle span {
@@ -227,26 +219,25 @@ section h2 {
 /* MESSAGE */
 .message {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Image on left, text on right */
+  grid-template-columns: 1fr 1fr;
   gap: 50px;
   align-items: center;
   padding: 40px 20px;
 }
 
 .message img {
-  width: 100%;             /* Fits the 1fr column */
-  height: 450px;           /* Sets a fixed height for consistency */
-  object-fit: cover;       /* Ensures the image fills the space without stretching */
-  border-radius: 8px;      /* Optional: rounds the corners for a modern look */
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 /* Make it responsive for mobile devices */
 @media (max-width: 768px) {
   .message {
-    grid-template-columns: 1fr; /* Stacks image and text on top of each other */
+    grid-template-columns: 1fr;
+  }
 }
-
-
 
 /* CONTACT */
 .contact {
@@ -272,8 +263,8 @@ footer div {
 }
 
 footer img {
-  width: 150px; /* Limits size to match layout standard */
-  max-width: 80%; /* Keeps it fully responsive on tiny devices */
+  width: 150px;
+  max-width: 80%;
   height: auto;
   margin-bottom: 15px;
   display: inline-block;
@@ -310,18 +301,15 @@ footer p {
 }
 
 /* ================= RESPONSIVE DESIGN ================= */
-
-/* TABLETS & PHONES (900px and down) */
 @media (max-width: 900px) {
   .navbar {
     padding: 15px 5%; 
   }
 
   .menu-toggle {
-    display: flex; /* Show hamburger button */
+    display: flex;
   }
 
-  /* Hamburger to 'X' animation using the 'active' class from JS */
   .menu-toggle.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
@@ -338,29 +326,28 @@ footer p {
 
   .nav-menu {
     position: fixed;
-    top: 80px; /* Position it right below your purple header bar */
-    right: -100%; /* Keep menu hidden completely out of frame to the right */
-    width: 100%; /* Take up full width for clean mobile presentation */
-    height: calc(100vh - 80px); /* Fill the rest of the screen */
+    top: 80px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
     background: var(--purple);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* List links starting from top down */
+    justify-content: flex-start;
     padding-top: 40px;
     gap: 35px;
     transition: right 0.4s ease-in-out;
-    z-index: 9990; 
+    z-index: 9990;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
 
-  /* Slide in smoothly when active class is applied by JS */
   .nav-menu.active {
     right: 0; 
   }
 
   .nav-menu a {
-    font-size: 20px; /* Make text bigger so it's easy to tap on phones */
+    font-size: 20px;
     width: 100%;
     display: block;
   }
@@ -390,194 +377,3 @@ footer p {
     font-size: 30px;
   }
 }
-/* Background colors from image_7.png */
-body {
-    background-color: #f4f4f4; /* Light gray background for content */
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-}
-
-/* Navbar styling as seen in image_7.png */
-.navbar {
-    background-color: #551a8b; /* Deep purple header color */
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h2 {
-    color: white;
-}
-
-/* Ensure the hero section matches */
-.page-hero {
-    background-color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-/* Style for the Contact info and Form container */
-.contact {
-    padding: 20px;
-}   /* Updated to match your screenshot */
-  --black: #111111;
-}
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  color: var(--black);
-  background: var(--gray);
-  padding-top: 90px;
-}
-
-/* ================= HEADER & NAVBAR ================= */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 8%;
-  background: var(--purple);
-  width: 100%;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.logo h2 {
-  color: white;
-}
-
-/* NAV MENU */
-.nav-menu {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-.nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* APPLY BUTTON */
-.apply-btn {
-  background: white;
-  color: var(--purple);
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ================= SECTIONS ================= */
-section {
-  padding: 80px 8%;
-  text-align: center;
-}
-
-.page-hero {
-  background: white;
-  padding: 60px 20px;
-}
-
-/* CONTACT PAGE STYLING */
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  padding: 80px 8%;
-  background: var(--white);
-  text-align: left;
-}
-
-.contact-info h2, .contact-form h2 {
-  color: var(--purple);
-  margin-bottom: 20px;
-}
-
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-family: inherit;
-}
-
-.contact-form button {
-  background: var(--purple);
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 900px) {
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .menu-toggle span {
-    width: 25px;
-    height: 3px;
-    background: white;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 80px;
-    right: -100%;
-    width: 100%;
-    height: calc(100vh - 80px);
-    background: var(--purple);
-    flex-direction: column;
-    padding-top: 50px;
-    transition: 0.4s;
-  }
-
-  .nav-menu.active { right: 0; }
-  
-  .apply-btn { display: none; }
-
-  .contact {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-
