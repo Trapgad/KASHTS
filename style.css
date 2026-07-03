@@ -204,6 +204,16 @@ section h2 {
   font-size: 0.95rem;
   line-height: 1.6;
 }
+.cards div ul {
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.cards div li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
 
 /* STATS */
 .stats {
