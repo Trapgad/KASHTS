@@ -382,3 +382,36 @@ footer p {
     font-size: 30px;
   }
 }
+/* Background colors from image_7.png */
+body {
+    background-color: #f4f4f4; /* Light gray background for content */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Navbar styling as seen in image_7.png */
+.navbar {
+    background-color: #551a8b; /* Deep purple header color */
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    color: white;
+}
+
+/* Ensure the hero section matches */
+.page-hero {
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Style for the Contact info and Form container */
+.contact {
+    padding: 20px;
+}
+
