@@ -173,45 +173,16 @@ info@kashts.edu
 
 
 <h2>
-Send Us A Message
-</h2>
+<h2>Send Us A Message</h2>
 
-
-
-<form>
-
-
-<input 
-type="text"
-placeholder="Your Name">
-
-
-
-<input 
-type="email"
-placeholder="Your Email">
-
-
-
-<input 
-type="tel"
-placeholder="Phone Number">
-
-
-
-<textarea
-placeholder="Your Message">
-</textarea>
-
-
-
-<button>
-Send Message
-</button>
-
-
-
+<form action="https://formspree.io/f/xaqglzqa" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <input type="tel" name="phone" placeholder="Phone Number">
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
 </form>
+
 
 
 </div>
