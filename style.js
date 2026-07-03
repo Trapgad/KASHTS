@@ -1,6 +1,6 @@
-/* =========================
-   KASHTS WEBSITE JAVASCRIPT (FULLY FIXED)
-========================= */
+// ==================================================
+// KASHTS WEBSITE JAVASCRIPT (FULLY FIXED & OPTIMIZED)
+// ==================================================
 
 // ================= NAVBAR SCROLL EFFECT =================
 window.addEventListener("scroll", function () {
@@ -31,7 +31,7 @@ const reveal = () => {
     });
 };
 
-// initial setup
+// Initial setup for scroll reveal
 sections.forEach(section => {
     section.style.opacity = "0";
     section.style.transform = "translateY(40px)";
@@ -49,19 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener('click', (e) => {
-            // Prevents any unexpected event bubbling issues
+            // Prevents event bubbling to ensure smooth toggle
             e.stopPropagation(); 
             
-            menuToggle.classList.toggle('active'); // Animates the hamburger to an 'X'
-            navMenu.classList.toggle('active');    // Slides the purple menu out/in
+            menuToggle.classList.toggle('active'); // Animates hamburger to 'X'
+            navMenu.classList.toggle('active');    // Slides the menu out/in
         });
     }
 });
 
 
-// ================= FOOTER YEAR =================
-const year = document.querySelector(".year");
+// ================= FOOTER YEAR (AUTOMATIC) =================
+// This selects the span with class "year" in your footer
+const yearElement = document.querySelector(".year");
 
-if (year) {
-    year.textContent = new Date().getFullYear();
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
 }
