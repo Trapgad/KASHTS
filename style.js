@@ -1,4 +1,3 @@
-Pls don’t change anything just go through 
 /* =========================
    KASHTS WEBSITE JAVASCRIPT (FULLY FIXED)
 ========================= */
