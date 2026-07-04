@@ -1,295 +1,71 @@
-/* =========================
-   KASHTS WEBSITE CSS (FULLY FIXED & OPTIMIZED)
-========================= */
+/* ================= RESPONSIVE IMAGES ================= */
 
-:root {
-  --purple: #4B0082;
-  --white: #ffffff;
-  --gray: #f2f2f2;
-  --black: #111111;
-}
-
-/* RESET & GLOBAL IMAGE FIX */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-/* This ensures no image ever overflows its container */
+/* General Images */
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  color: var(--black);
-  background: var(--white);
-  padding-top: 90px;
-}
-
-/* ================= HEADER & NAVBAR ================= */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 8%;
-  background: var(--purple);
-  width: 100%;
-}
-
-/* LOGO */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
+/* School Logo */
 .logo img {
-  width: 50px;
-  border-radius: 50%;
+    width: clamp(45px, 5vw, 60px);
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-.logo h2 {
-  color: white;
-}
-
-/* APPLY BUTTON */
-.apply-btn {
-  background: white;
-  color: var(--purple);
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* ================= NAV MENU (DESKTOP) ================= */
-.nav-menu {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
-
-.nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* HAMBURGER BUTTON */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  cursor: pointer;
-  background: none;
-  border: none;
-  position: relative; 
-  z-index: 9999;
-}
-
-.menu-toggle span {
-  width: 100%;
-  height: 3px;
-  background: white;
-  transition: 0.3s ease-in-out;
-  border-radius: 2px;
-}
-
-/* ================= HERO ================= */
-.hero {
-  height: 100vh;
-  background:
-    linear-gradient(rgba(75,0,130,.75), rgba(0,0,0,.75)),
-    url("Photo-2026-06-30-13-32-10.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-text {
-  color: white;
-  max-width: 900px;
-  padding: 20px;
-}
-
-.hero-text h1 {
-  font-size: 55px;
-  margin: 20px 0;
-}
-
-.hero-text p {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.btn {
-  background: white;
-  color: var(--purple);
-  padding: 15px 35px;
-  border-radius: 40px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
-
-/* ================= SECTIONS ================= */
-section {
-  padding: 80px 8%;
-  text-align: center;
-}
-
-section h2 {
-  color: var(--purple);
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-/* ABOUT */
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-}
-
-/* About image now constrained */
+/* About Section Image */
 .about img {
-  border-radius: 20px;
-  width: 100%;
-  max-height: 400px; /* Prevents extremely tall images */
-  object-fit: cover;
-}
-
-.boxes {
-  display: flex;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.boxes div {
-  background: var(--gray);
-  padding: 25px;
-  border-radius: 15px;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-  align-items: start;
-}
-
-.cards div {
-  background: var(--gray);
-  padding: 35px;
-  border-radius: 20px;
-  text-align: left;
-}
-
-.cards div h3 {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-/* STATS */
-.stats {
-  background: var(--purple);
-  color: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-}
-
-/* MESSAGE */
-.message {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  align-items: center;
-  padding: 40px 20px;
-}
-
-/* Message image constrained */
-.message img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* CONTACT */
-.contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  background: var(--gray);
-}
-
-/* ================= FOOTER ================= */
-footer {
-  background: var(--black);
-  color: white;
-  text-align: center;
-  padding: 40px 8%;
-}
-
-footer img {
-  width: 150px;
-  margin-bottom: 15px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  right: 25px;
-  bottom: 25px;
-  background: var(--purple);
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  z-index: 999;
-}
-
-/* ================= RESPONSIVE DESIGN ================= */
-@media (max-width: 900px) {
-  .navbar { padding: 15px 5%; }
-  .menu-toggle { display: flex; }
-  .apply-btn { display: none; }
-  .nav-menu {
-    position: fixed;
-    top: 80px;
-    right: -100%;
     width: 100%;
-    height: calc(100vh - 80px);
-    background: var(--purple);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: right 0.4s ease-in-out;
-  }
-  .nav-menu.active { right: 0; }
-  .about, .message, .contact { grid-template-columns: 1fr; }
+    max-width: 600px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+/* Headmaster / Message Image */
+.message img {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+/* Footer Logo */
+footer img {
+    width: clamp(90px, 12vw, 150px);
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 15px;
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+    .about img,
+    .message img {
+        max-width: 100%;
+    }
+
+    .message img {
+        aspect-ratio: auto;
+        height: auto;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+
+    .about img {
+        max-width: 650px;
+    }
+
+    .message img {
+        max-width: 550px;
+    }
 }
