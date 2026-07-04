@@ -9,12 +9,19 @@
   --black: #111111;
 }
 
-/* RESET */
+/* RESET & GLOBAL IMAGE FIX */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+/* This ensures no image ever overflows its container */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 body {
@@ -81,7 +88,7 @@ header {
   font-weight: 600;
 }
 
-/* HAMBURGER BUTTON (HIDDEN ON DESKTOP) */
+/* HAMBURGER BUTTON */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -163,9 +170,12 @@ section h2 {
   align-items: center;
 }
 
+/* About image now constrained */
 .about img {
-  width: 100%;
   border-radius: 20px;
+  width: 100%;
+  max-height: 400px; /* Prevents extremely tall images */
+  object-fit: cover;
 }
 
 .boxes {
@@ -180,7 +190,7 @@ section h2 {
   border-radius: 15px;
 }
 
-/* CARDS - UPDATED FOR BETTER READABILITY */
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -192,27 +202,12 @@ section h2 {
   background: var(--gray);
   padding: 35px;
   border-radius: 20px;
-  text-align: left; /* Aligns text to the left for better reading */
+  text-align: left;
 }
 
 .cards div h3 {
   margin-bottom: 10px;
-  text-align: center; /* Keeps the titles centered */
-}
-
-.cards div p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-.cards div ul {
-  padding-left: 20px;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.cards div li {
-  margin-bottom: 5px;
-  font-size: 0.9rem;
+  text-align: center;
 }
 
 /* STATS */
@@ -233,18 +228,12 @@ section h2 {
   padding: 40px 20px;
 }
 
+/* Message image constrained */
 .message img {
   width: 100%;
-  height: 450px;
+  max-height: 400px;
   object-fit: cover;
   border-radius: 8px;
-}
-
-/* Make it responsive for mobile devices */
-@media (max-width: 768px) {
-  .message {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* CONTACT */
@@ -263,33 +252,9 @@ footer {
   padding: 40px 8%;
 }
 
-footer div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 footer img {
   width: 150px;
-  max-width: 80%;
-  height: auto;
   margin-bottom: 15px;
-  display: inline-block;
-}
-
-footer h2 {
-  font-size: 24px;
-  margin-bottom: 5px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 5px;
-  width: fit-content;
-}
-
-footer p {
-  color: #cccccc;
-  font-size: 14px;
-  margin-top: 5px;
 }
 
 /* WHATSAPP */
@@ -310,28 +275,9 @@ footer p {
 
 /* ================= RESPONSIVE DESIGN ================= */
 @media (max-width: 900px) {
-  .navbar {
-    padding: 15px 5%; 
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-
-  .menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-  .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-
-  .apply-btn {
-    display: none; 
-  }
-
+  .navbar { padding: 15px 5%; }
+  .menu-toggle { display: flex; }
+  .apply-btn { display: none; }
   .nav-menu {
     position: fixed;
     top: 80px;
@@ -342,66 +288,8 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 40px;
-    gap: 35px;
     transition: right 0.4s ease-in-out;
-    z-index: 9990;
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
-
-  .nav-menu.active {
-    right: 0; 
-  }
-
-  .nav-menu a {
-    font-size: 20px;
-    width: 100%;
-    display: block;
-  }
-
-  .about,
-  .message,
-  .contact {
-    grid-template-columns: 1fr;
-  }
-
-  .boxes {
-    flex-direction: column;
-  }
-
-  .hero-text h1 {
-    font-size: 40px;
-  }
+  .nav-menu.active { right: 0; }
+  .about, .message, .contact { grid-template-columns: 1fr; }
 }
-
-/* SMALL PHONES */
-@media (max-width: 600px) {
-  .hero-text h1 {
-    font-size: 30px;
-  }
-
-  section h2 {
-    font-size: 30px;
-  }
-}
-/* Styling for the Academic Excellence section */
-.why {
-  background: var(--gray);
-  padding: 80px 8%;
-  text-align: center;
-}
-
-.why h2 {
-  color: var(--purple);
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.why p {
-  font-size: 1.1rem;
-  color: var(--black);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
